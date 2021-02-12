@@ -26,6 +26,12 @@ body {
 }
 
 /* Header */
+.container {
+    border: 5px solid red;
+    width: 1200px;
+
+}
+
 .logo-web, .logo-studio {
     text-decoration: none;
     font-family: Raleway;
