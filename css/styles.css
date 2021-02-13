@@ -28,15 +28,18 @@ body {
 /* Header */
 .container {
     background-color: purple;
+    border: 2px solid red;
     width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.container,
+.header,
 .contacts,
 .nav,
 .pages {
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 .logo-web, .logo-studio {
@@ -54,11 +57,22 @@ body {
 .logo-studio:hover,
 .logo-studio:focus {color: var(--accent);} */
 
-.logo-web {color: var(--accent);}
+.logo-web {
+    color: var(--accent);
+    
+    margin: 24px 0px 25px 0px;
+}
 
 .logo-studio {color: #000000;}
 
 .logo-studio-f {color: #FFFFFF;}
+
+.pages {
+    margin: 32px 0px 32px 93px;
+    padding: 0px;
+    width: 294px;
+    justify-content: space-between;
+}
 
 .nav-link {
     text-decoration: none;
@@ -73,6 +87,13 @@ body {
 .nav-link:focus {color: var(--accent);}
 
 .current {color: var(--accent);}
+
+.contacts {
+    margin: 32px 0px 32px 331px;
+    padding: 0px;
+    width: 327px;
+    justify-content: space-between;
+}
 
 .mail,
 .tel {
@@ -105,6 +126,9 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    margin: 200px 452px 0px;
+    width: 696;
 }
 
 .hero-button {
@@ -115,6 +139,10 @@ body {
     line-height: 30px;
     text-align: center;
     letter-spacing: 0.06em;
+
+    margin: 30px 700px 200px;
+    width: 200;
+    border-radius: 4px;
 }
 
 /* Преимущества */
