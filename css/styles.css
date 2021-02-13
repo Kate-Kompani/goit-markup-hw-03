@@ -27,9 +27,16 @@ body {
 
 /* Header */
 .container {
-    border: 5px solid red;
+    background-color: purple;
     width: 1200px;
+}
 
+.container,
+.contacts,
+.nav,
+.pages {
+    display: flex;
+    align-items: center
 }
 
 .logo-web, .logo-studio {
