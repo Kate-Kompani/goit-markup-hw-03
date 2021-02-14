@@ -20,17 +20,16 @@ ul {list-style: none;}
 
 body {
     background-color: #FFFFFF;
-    /* color: #757575;*/
     font-family: Roboto;
     font-style: normal;
 }
 
 /* Header */
-.container {
-    width: 1200px;
-    min-height: 80px;
+.container{
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    border: 0.1px solid red;
 }
 
 .header,
@@ -50,11 +49,6 @@ body {
     line-height: 31px;
     letter-spacing: 0.03em;
 }
-
-/* .logo-web:hover,
-.logo-web:focus,
-.logo-studio:hover,
-.logo-studio:focus {color: var(--accent);} */
 
 .logo-web {
     color: var(--accent);
@@ -222,15 +216,28 @@ body {
 }
 
 .cards-team {
+    --set-gap: 30px;
+
     display: flex;
+    flex-wrap: wrap;
+    margin-left: (-1 * var(--set-gap));
+    
     padding: 0px;
     margin: 50px 0px 94px;
-    justify-content:space-between;
 }
 
-.card {
+.card-team >.card {
+    flex-basis: calc(100% / 4 - var(--set-gap));
+    margin-left: var(--set-gap);
+    background-color: aqua;
+
+}
+
+/* .card {
     background-color: #FFFFFF;
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px; */
+
+
 }
 
 .personal-name {
@@ -328,6 +335,8 @@ footer {background-color: var(--background-color);}
     line-height: 36px;
     letter-spacing: 0.06em;
     color: var(--title-color);
+    
+    margin: 20px 0px 0px;
 }
 .portfolio-description {
     font-weight: normal;
@@ -335,4 +344,35 @@ footer {background-color: var(--background-color);}
     line-height: 30px;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    
+    margin: 4px 0px 20px;
+}
+
+.btn-set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 0;
+    margin: 94px 0 50px;
+}
+
+.btn-set >.btn:not(:last-child) {
+    margin-right: 8.09px;
+}
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 50px;
+    margin-top: -30px;
+    margin-left: -30px;
+    list-style: none;
+
+}
+.card-set >.services {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
 }
