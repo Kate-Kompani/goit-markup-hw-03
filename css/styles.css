@@ -27,9 +27,8 @@ body {
 
 /* Header */
 .container {
-    background-color: purple;
-    border: 2px solid red;
     width: 1200px;
+    min-height: 80px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -64,8 +63,6 @@ body {
 }
 
 .logo-studio {color: #000000;}
-
-.logo-studio-f {color: #FFFFFF;}
 
 .pages {
     margin: 32px 0px 32px 93px;
@@ -127,8 +124,8 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
 
-    margin: 200px 452px 0px;
-    width: 696;
+    margin: 200px 252px 0px;
+    width: 696px;
 }
 
 .hero-button {
@@ -140,7 +137,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
 
-    margin: 30px 700px 200px;
+    margin: 30px 500px 200px;
     width: 200;
     border-radius: 4px;
 }
@@ -159,6 +156,17 @@ body {
     overflow: hidden;
 }
 
+.card-advantages {
+    display: flex;
+    justify-content:space-between;
+    margin: 94px 0px;
+    padding: 0px;
+}
+
+.card-advantages-item {
+    width: 270px;
+}
+
 .advantages {
     font-weight: bold;
     font-size: 14px;
@@ -166,6 +174,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-color);
+
+    margin: 0px;
 }
 
 .advantages-description {
@@ -174,9 +184,32 @@ body {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--text-color);
+
+    margin: 10px 0px 0px;
 }
-/* секции Чем мы занимаемся и Команда */
-.section-case-title,
+
+/* секции Чем мы занимаемся*/
+.section-case-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+
+    margin: 0px;
+}
+
+.cards-case {
+    display: flex;
+    justify-content:space-between;
+    margin: 50px 0px 94px;
+    padding: 0px;
+}
+
+/* секция Команда */
+.section-team {background: var(--other-background-color);}
+
 .section-team-title {
     font-weight: bold;
     font-size: 36px;
@@ -184,9 +217,21 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
+
+    margin: 94px 0px 0px;
 }
 
-.section-team {background: var(--other-background-color);}
+.cards-team {
+    display: flex;
+    padding: 0px;
+    margin: 50px 0px 94px;
+    justify-content:space-between;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+}
 
 .personal-name {
     font-weight: 500;
@@ -194,6 +239,9 @@ body {
     line-height: 19px;
     letter-spacing: 0.03em;
     color: var(--title-color);
+    text-align: center;
+
+    margin: 30px 0px 0px;
 }
 
 .post {
@@ -202,10 +250,33 @@ body {
     line-height: 19px;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    text-align: center;
+
+    margin: 10px 0px 30px;
 }
 
 /* Футер */
 footer {background-color: var(--background-color);}
+
+.logo-web-f {
+    text-decoration: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--accent);
+    
+    display: block;
+    margin: 60px 0px 0px;
+}
+
+.logo-studio-f {color: #FFFFFF;}
+
+.address {
+    margin: 20px 0px 60px;
+}
 
 .address-f,
 .mail-f,
@@ -225,7 +296,13 @@ footer {background-color: var(--background-color);}
 
 .mail-f,
 .tel-f {
-    color:rgba(255, 255, 255, 0.6)
+    color:rgba(255, 255, 255, 0.6);
+
+    display: block;
+}
+
+.mail-f {
+    margin: 9px 0px 9px;
 }
 
 /* Портфолио */
