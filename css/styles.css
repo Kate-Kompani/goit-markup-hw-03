@@ -27,9 +27,9 @@ body {
 /* Header */
 .container{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 0 15px;
-    border: 0.1px solid red;
+    
 }
 
 .header,
@@ -59,7 +59,7 @@ body {
 .logo-studio {color: #000000;}
 
 .pages {
-    margin: 32px 0px 32px 93px;
+    margin: 0px 0px 0px 93px;
     padding: 0px;
     width: 294px;
     justify-content: space-between;
@@ -72,6 +72,8 @@ body {
     line-height: 16px;
     letter-spacing: 0.02em;
     color: #212121;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .nav-link:hover,
@@ -106,6 +108,12 @@ body {
 /* Герой */
 .hero {
     background-color: var(--background-color);
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right:auto;
+    min-height: 600px;
+    display: flax;
+    justify-content: center;
 }
 
 .hero-title {
@@ -118,7 +126,8 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
 
-    margin: 200px 252px 0px;
+    padding-top: 200px;
+    margin: 0px 200px 0px;
     width: 696px;
 }
 
@@ -212,7 +221,8 @@ body {
     letter-spacing: 0.03em;
     color: var(--title-color);
 
-    margin: 94px 0px 0px;
+    margin: 0px 0px 0px;
+    padding-top: 94px;
 }
 
 .cards-team {
@@ -220,24 +230,16 @@ body {
 
     display: flex;
     flex-wrap: wrap;
+    padding: 0px 0px 94px;
+    margin: 50px 0px 0px;
     margin-left: (-1 * var(--set-gap));
-    
-    padding: 0px;
-    margin: 50px 0px 94px;
 }
 
-.card-team >.card {
-    flex-basis: calc(100% / 4 - var(--set-gap));
+.card {
+    flex-basis: calc(100%/ 4 - var(--set-gap));
     margin-left: var(--set-gap);
-    background-color: aqua;
-
-}
-
-/* .card {
     background-color: #FFFFFF;
-    border-radius: 0px 0px 4px 4px; */
-
-
+    border-radius: 0px 0px 4px 4px;
 }
 
 .personal-name {
@@ -276,13 +278,15 @@ footer {background-color: var(--background-color);}
     color: var(--accent);
     
     display: block;
-    margin: 60px 0px 0px;
+    margin: 0px 0px 0px;
+    padding-top: 60px;
 }
 
 .logo-studio-f {color: #FFFFFF;}
 
 .address {
-    margin: 20px 0px 60px;
+    margin: 20px 0px 0px;
+    padding-bottom: 60px;
 }
 
 .address-f,
@@ -365,7 +369,6 @@ footer {background-color: var(--background-color);}
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin-top: 50px;
     margin-top: -30px;
     margin-left: -30px;
     list-style: none;
@@ -375,4 +378,8 @@ footer {background-color: var(--background-color);}
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc(100% / 3 - 30px);
+}
+
+.portfolio {
+    margin-bottom: 94px;
 }
