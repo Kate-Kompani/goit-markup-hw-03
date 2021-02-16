@@ -26,6 +26,7 @@ body {
 
 /* Header */
 .container{
+    /* border: 1px solid #2196F3; */
     max-width: 1200px;
     margin: 0px auto;
     padding: 0 15px;
@@ -221,23 +222,26 @@ body {
     letter-spacing: 0.03em;
     color: var(--title-color);
 
-    margin: 0px 0px 0px;
+    margin: 0px 0px 50px;
     padding-top: 94px;
 }
 
 .cards-team {
+    /* border: 1px solid #2196F3; */
     --set-gap: 30px;
 
     display: flex;
     flex-wrap: wrap;
     padding: 0px 0px 94px;
-    margin: 50px 0px 0px;
-    margin-left: (-1 * var(--set-gap));
+    margin: 0px;
+    margin-left: -30px;
+    margin-top: calc(-1 * var(--set-gap));
 }
 
 .card {
     flex-basis: calc(100%/ 4 - var(--set-gap));
     margin-left: var(--set-gap);
+    margin-top: 30px;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
 }
@@ -375,9 +379,10 @@ footer {background-color: var(--background-color);}
 
 }
 .card-set >.services {
+    flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
     margin-left: 30px;
-    flex-basis: calc(100% / 3 - 30px);
+    
 }
 
 .portfolio {
