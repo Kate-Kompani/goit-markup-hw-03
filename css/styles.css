@@ -24,6 +24,12 @@ body {
     font-style: normal;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Header */
 .container{
     /* border: 1px solid #2196F3; */
@@ -337,23 +343,12 @@ footer {background-color: var(--background-color);}
     color:#FFFFFF;
 }
 
-.portfolio-title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
-    color: var(--title-color);
-    
-    margin: 20px 0px 0px;
+.filter {
+    border-top: 1px solid #ECECEC;
 }
-.portfolio-description {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-    
-    margin: 4px 0px 20px;
+
+.btn-filter {
+    padding-top: 94px;
 }
 
 .btn-set {
@@ -362,11 +357,35 @@ footer {background-color: var(--background-color);}
     align-items: center;
     border-radius: 4px;
     padding: 0;
-    margin: 94px 0 50px;
+    margin: 0px;
 }
 
 .btn-set >.btn:not(:last-child) {
-    margin-right: 8.09px;
+    margin-right: 8px;
+}
+
+
+.portfolio {
+    padding: 50px 0px 94px;
+}
+
+.portfolio-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    
+    margin: 0px;
+}
+.portfolio-description {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    
+    margin-top: 4px;
 }
 
 .card-set {
@@ -379,13 +398,12 @@ footer {background-color: var(--background-color);}
 
 }
 .card-set >.services {
-    border: 1px solid #EEEEEE;
+    outline: 1px solid #EEEEEE;
     flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
-    margin-left: 30px;
-    
+    margin-left: 30px;    
 }
 
-.portfolio {
-    margin-bottom: 94px;
+.card-content {
+    margin: 20px 24px;
 }
