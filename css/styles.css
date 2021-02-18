@@ -35,6 +35,11 @@ img {
     height: auto;
 }
 
+h1, h2, h3, h4 {
+    margin: 0px;
+    padding: 0px;
+}
+
 /* Header */
 .container{
     max-width: 1200px;
@@ -151,6 +156,7 @@ img {
     letter-spacing: 0.06em;
 
     border-radius: 4px;
+    margin-top: 30px;
 }
 
 /* Преимущества */
