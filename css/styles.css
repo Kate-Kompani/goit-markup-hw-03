@@ -160,6 +160,10 @@ h1, h2, h3, h4 {
 }
 
 /* Преимущества */
+.section-advantages {
+    padding-top: 94px;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -176,7 +180,7 @@ h1, h2, h3, h4 {
 .card-advantages {
     display: flex;
     justify-content:space-between;
-    margin: 94px 0px;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -207,6 +211,11 @@ h1, h2, h3, h4 {
 
 /* секции Чем мы занимаемся*/
 
+.section-case {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-case-title {
     font-weight: bold;
     font-size: 36px;
@@ -221,7 +230,7 @@ h1, h2, h3, h4 {
 .cards-case {
     display: flex;
     justify-content:space-between;
-    margin: 50px 0px 94px;
+    margin: 50px 0px 0px;
     padding: 0px;
 }
 
