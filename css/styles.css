@@ -18,6 +18,11 @@
 
 ul {list-style: none;}
 
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
 body {
     background-color: #FFFFFF;
     font-family: Roboto;
@@ -32,11 +37,9 @@ img {
 
 /* Header */
 .container{
-    /* border: 1px solid #2196F3; */
     max-width: 1200px;
     margin: 0px auto;
-    padding: 0 15px;
-    
+    padding: 0px 15px;
 }
 
 .header,
@@ -60,7 +63,7 @@ img {
 .logo-web {
     color: var(--accent);
     
-    margin: 24px 0px 25px 0px;
+    padding: 24px 0px 25px 0px;
 }
 
 .logo-studio {color: #000000;}
@@ -115,12 +118,10 @@ img {
 /* Герой */
 .hero {
     background-color: var(--background-color);
-    max-width: 1600px;
     margin-left: auto;
-    margin-right:auto;
-    min-height: 600px;
     display: flax;
     justify-content: center;
+    border-top: 1px solid #ECECEC;
 }
 
 .hero-title {
@@ -133,9 +134,8 @@ img {
     text-transform: uppercase;
     color: #FFFFFF;
 
-    padding-top: 200px;
-    margin: 0px 200px 0px;
-    width: 696px;
+    margin: 0px;
+    padding: 200px 200px 0px;
 }
 
 .hero-button {
@@ -199,6 +199,7 @@ img {
 }
 
 /* секции Чем мы занимаемся*/
+
 .section-case-title {
     font-weight: bold;
     font-size: 36px;
